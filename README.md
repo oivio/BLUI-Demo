@@ -1,4 +1,4 @@
-This Repository is updated demo for UE5 Custom Web Browser plugin for https://github.com/getnamo/BLUI-Unreal/ 
+This Repository is updated demo for UE5 BLUI Plugin for https://github.com/getnamo/BLUI-Unreal/ 
 
 BLUI is an Unreal Engine plugin that allows easy interaction with the Chromium Embedded Framework. It provides a simple Material Instance and input functions to help streamline the rendering of rich HTML interfaces.
 It tries to stay out of the way as much as possible. All rendering of the DOM and processing of the JavaScript happens in a separate process, just like Chromium. 
