@@ -1,0 +1,11 @@
+/.git
+/.vscode
+/BluCache
+/Content
+/DerivedDataCache
+/Intermediate
+/Saved
+/Plugins/BLUI-Unreal/builder
+/Plugins/BLUI-Unreal/Content
+/Plugins/BLUI-Unreal/Intermediate
+/Plugins/BLUI-Unreal/ThirdParty
