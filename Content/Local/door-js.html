@@ -1,0 +1,135 @@
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>BLUI Demo</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -- buttons css source: https://codepen.io/CTNieves/pen/pbLGZW -->
+<style type="text/css">
+    body {
+        background: transparent!important;
+		top: 50%;
+		left: 50%;
+    }
+		  
+	@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+	/*
+	 BUTTON STYLING
+	*/
+
+	.btn {
+		position: relative;
+		color: white;
+		width: 512px;
+		height: 256px;
+		line-height: 256px;
+		transition: all 0.3s;
+		font-size:64px;
+		span {
+			transition: all 0.3s;
+			tranform: scale(1, 1);
+		 }
+	}
+
+	.btn::before, .btn::after {
+		content: '';
+		position: absolute;
+		transition: all 0.3s;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	.btn-one::before {
+		left: 4px;
+		z-index: 1;
+		opacity: 0;
+		background: rgba(255, 255, 255, 0.1);
+		transform: scale(0.1, 1);
+	}
+
+	.btn-one:hover::before {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+
+	.btn-one::after {
+		transition: all 0.3s;
+		border: 10px solid #cccccc;
+	}
+
+	.btn-one:hover::after {
+		transform: scale(1, .1);
+		opacity: 0;
+	}
+
+
+	.btn-two::before, .btn-two::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		transition: all 0.3s;
+		 border: 10px solid  #cccccc;
+	}
+
+	.btn-two:hover::after {
+		animation-name: rotatecw;
+		animation-duration: 2s;
+	}
+	.btn-two:hover::before {
+		animation-name: rotateccw; 
+		animation-duration: 3s;
+	}
+	.btn-two:hover::after, .btn-two:hover::before {
+		left: 192px;
+		width: 128px;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	@keyframes rotatecw {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(360deg);}
+	}
+
+	@keyframes rotateccw {
+		from {transform: rotate(0deg);}
+		to {transform: rotate(-360deg);}
+	}
+
+    </style>
+
+  </head>
+
+  <body>
+
+  <center>
+<div style="margin-top: 15%;">
+    <div class="btn btn-two" onclick="toggle_button(true);">
+      <span><b>OPEN DOOR</b></span>
+    </div><br><br>
+    <div style="margin-top: 50px;" class="btn btn-two" onclick="toggle_button(false);">
+      <span><b>CLOSE DOOR</b></span>
+    </div>
+</div>
+
+		<script type="text/javascript">
+
+			// Trigger events in game, feed UE4 JSON and parse it via blueprints
+			function toggle_button(flag)
+			{
+				blu_event('toggle','{"value":' + flag +'}');
+			}
+
+		</script>
+  <center>
+	</body>
+
+</html>

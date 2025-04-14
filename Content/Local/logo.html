@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>TestHUD</title>
+
+	</head>
+	<body>
+
+		<img src="img/blui.png">
+
+		<h3 style="
+	    position: absolute;
+	    top: 350px;
+	    left: 130px;">Welcome to BLUI!</h3>
+
+	    <h3 style="position: absolute;top: 370px; left: 120px;">Player Position: <span id="playerPOS">NaN</span></h3>
+	    <script type="text/javascript">
+
+	    	function updatePlayerPosition(dataString)
+	    	{
+	    		document.getElementById("playerPOS").innerHTML= dataString;
+	    	}
+
+	    </script>
+
+	</body>
+
+
+</html>

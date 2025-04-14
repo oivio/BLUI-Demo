@@ -1,0 +1,3 @@
+[submodule "Plugins/BLUI-Unreal"]
+	path = Plugins/BLUI-Unreal
+	url = https://github.com/getnamo/BLUI-Unreal.git
