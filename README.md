@@ -8,7 +8,9 @@
 <p dir="auto" align="center">
   This Repository is updated demo for UE5 BLUI Plugin for https://github.com/getnamo/BLUI-Unreal/ 
 
-  <img src="https://github.com/user-attachments/assets/04fbe2ed-8d89-4c6a-9f14-50ce612951ee" align="center" width="80%" height="80%">
+  <a href="https://www.youtube.com/watch?v=R0xylXhBm-0">
+    <img src="https://github.com/user-attachments/assets/04fbe2ed-8d89-4c6a-9f14-50ce612951ee" align="center" width="80%" height="80%">
+  </a>
 </p>
 
 <b>BLUI</b> is an Unreal Engine plugin that allows easy interaction with the Chromium Embedded Framework. It provides a simple Material Instance and input functions to help streamline the rendering of rich HTML interfaces.
